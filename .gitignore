@@ -1,0 +1,6 @@
+# nothing interesting to ignore, but keep local clutter out of the repo
+__pycache__/
+*.pyc
+.DS_Store
+THUMBS.ini
+*.swp

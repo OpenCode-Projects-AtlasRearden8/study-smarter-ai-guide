@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn AI into a study partner — learn, don&#x27;t copy.">
+<title>Chapter 2 — Explain It Back — Study Smarter with AI</title>
+<style>:root {
+  --ink: #2a2a35; --muted: #6b6b78; --paper: #fdfbf7; --card: #ffffff;
+  --accent: #7c5cff; --accent-soft: #efeaff; --line: #e8e4dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7; font-size: 18px;
+}
+header.site {
+  background: var(--accent-soft); border-bottom: 3px solid var(--accent);
+  padding: 2.2rem 1rem 1.4rem; text-align: center;
+}
+header.site h1 { margin: 0 0 .3rem; font-size: 1.9rem; font-weight: bold; }
+header.site p { margin: 0; color: var(--muted); font-style: italic; }
+nav { text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line);
+  background: var(--card); font-size: .92rem; }
+nav a { margin: .25rem .55rem; display: inline-block; color: var(--accent);
+  text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2.1rem; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+h3 { margin-top: 1.6rem; }
+a { color: var(--accent); }
+pre {
+  background: #2d2d3a; color: #e8e8f2; padding: 1rem 1.1rem;
+  border-radius: 10px; overflow-x: auto; font-size: .86rem;
+  font-family: "Courier New", monospace; line-height: 1.5;
+}
+code { font-family: "Courier New", monospace; font-size: .9em;
+  background: var(--accent-soft); padding: .1em .4em; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1.2rem 0; padding: .8rem 1.2rem; border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 0 10px 10px 0; font-style: italic;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0;
+  font-size: .95rem; background: var(--card); }
+th, td { text-align: left; padding: .55rem .8rem; border: 1px solid var(--line); }
+th { background: var(--accent-soft); }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+  padding: 1.5rem 1rem 2.5rem; border-top: 1px solid var(--line); }
+.nextprev { display: flex; justify-content: space-between; gap: 1rem;
+  margin: 2.6rem 0 0; }
+.nextprev a { text-decoration: none; background: var(--accent-soft);
+  padding: .6rem 1rem; border-radius: 10px; }
+.nextprev a:hover { text-decoration: underline; }
+@media (max-width: 600px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<header class="site"><h1>Study Smarter with AI</h1><p>Turn AI into a study partner — learn, don't copy.</p></header>
+<nav>
+<a href="00-how-to-use-this-guide.html">How to Use This Guide</a>
+<a href="01-notes-into-quizzes.html">1. Notes Into Quizzes</a>
+<a href="02-explain-it-back.html" class="current">2. Explain It Back</a>
+<a href="03-spaced-review.html">3. Spaced Review</a>
+<a href="04-catching-hallucinations.html">4. Catching Hallucinations</a>
+<a href="05-citation-honesty.html">5. Citation Honesty</a>
+<a href="06-free-tools.html">6. Free Tools</a>
+<a href="07-worked-example.html">7. Worked Example</a>
+<a href="glossary.html">Glossary</a>
+</nav>
+<main>
+<h1>Chapter 2 — Explain It Back</h1>
+<p><em>Study Smarter with AI</em></p>
+<h2>The technique, in one breath</h2>
+<p>After you learn something (from a lecture, a textbook, a video, an AI), close the source and <strong>explain it back to the AI in your own words — out loud or in writing.</strong> Then ask the AI to find the gaps.</p>
+<p>That's it. That's the chapter. But let's take this one breath apart, because each piece is doing real work.</p>
+<h2>Why it works so well</h2>
+<p>Two things happen when you explain something back:</p>
+<ol>
+<li><strong>You find out what you actually know.</strong> Explaining is like a flashlight — it goes dark exactly where your understanding has holes. That feeling of "wait, why <em>does</em> the heart have four chambers and not one?" mid-explanation? That's not failure. That is the <em>exact</em> moment learning happens.
+</li>
+<li><strong>You rewrite it in your own language.</strong> Memory stores your words far better than the textbook's words. An explanation in terms of your hometown clinic, your kid's soccer team, or VideoGame lore will outlast any sentence with a semicolon and the phrase "whereas the latter."
+</li></ol>
+<p>This idea has a famous name — the <strong>Feynman Technique</strong>, after the physicist who learned this way — but you don't need to remember the name to use it.</p>
+<h2>The prompt that does the work</h2>
+<p>After finishing a topic, tell the AI:</p>
+<pre><code>I just studied [topic]. I&#x27;m going to explain it back to you
+in my own words. Do NOT fill in gaps for me while I talk —
+let me finish. Then:
+
+1. Tell me what I explained correctly.
+2. Point out anything I glossed over or got wrong, gently.
+3. Ask me 2 questions that would catch me if my
+   understanding is shallow.
+4. If my explanation was solid, ask me a harder
+   &quot;what if&quot; question to stretch me.</code></pre>
+<p>The "do NOT fill in gaps" line matters more than it looks. Helpful AIs love to rescue you, and being rescued interrupts the exact moment of productive struggle where you realize what you don't know. Finish first; gaps later.</p>
+<h2>A real-flavored example</h2>
+<p>Say you studied blood pressure medication basics. Your explain-back might start:</p>
+<blockquote><p>"Okay so blood pressure meds work in a few ways. Diuretics make you pee more, which lowers the fluid volume, so there's less pressure. ACE inhibitors stop something — I think it's angiotensin? — from tightening the blood vessels..."</p></blockquote>
+<p>You've already spotted it yourself: <em>something — I think it's angiotensin?</em> That question mark is the gap. Now the AI's job isn't to lecture; it's to nudge: "You're right that angiotensin tightens vessels. What does the 'ACE' part stand for, and where does the process start?" — and your next explanation is yours, not its.</p>
+<p id="a-note-for-healthcare-learners"><strong>A note for healthcare learners:</strong> this pattern is superb for things like giving patient explanations. Explain a medication "to a worried patient," then ask the AI to act as the patient and ask confused follow-up questions. You are rehearsing exactly what you'll do at work. Remember this is practice for <em>explanations and studying</em>, never a substitute for your clinical judgment or official protocols.</p>
+<h2>Level two: teach the AI</h2>
+<p>Flip the roles. Ask the AI to play a <em>student</em> who is confused, and make <strong>you</strong> the teacher:</p>
+<pre><code>You&#x27;re a student studying [topic] and you&#x27;re confused about
+[it]. Ask me questions until you understand it. Don&#x27;t
+understand too easily — push back like a real person.</code></pre>
+<p>Explaining to a confused "student" is harder and deeper work than explaining to an expert. It exposes every shortcut you've been leaning on.</p>
+<h2>Level three: the "explain it to a 10-year-old" test</h2>
+<p>The classic version: explain the topic with no jargon at all, as if to a bright ten-year-old. If you can't, you've found a spot where the <em>vocabulary</em> was holding the <em>understanding</em> together. That's gold — that's the thing to go reread.</p>
+<h2>Try it today</h2>
+<p>Pick one thing you "learned" this week — anything, a chapter, a chess opening, a knitting stitch pattern. Close the source. Explain it back to an AI using the prompt above. Then tell a human how it went; explaining it again to a person is level three in disguise.</p>
+<div class="nextprev"><a href="01-notes-into-quizzes.html">← 1. Notes Into Quizzes</a><a href="03-spaced-review.html">3. Spaced Review →</a></div>
+</main>
+<footer>
+Built from the docs/ markdown source by <code>build.py</code> ·
+Study Smarter with AI · © 2026 Asdale Dynamics, LLC · MIT licensed
+</footer>
+</body>
+</html>

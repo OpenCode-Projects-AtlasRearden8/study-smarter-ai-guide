@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn AI into a study partner — learn, don&#x27;t copy.">
+<title>Chapter 6 — Free Stuff That Actually Works — Study Smarter with AI</title>
+<style>:root {
+  --ink: #2a2a35; --muted: #6b6b78; --paper: #fdfbf7; --card: #ffffff;
+  --accent: #7c5cff; --accent-soft: #efeaff; --line: #e8e4dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7; font-size: 18px;
+}
+header.site {
+  background: var(--accent-soft); border-bottom: 3px solid var(--accent);
+  padding: 2.2rem 1rem 1.4rem; text-align: center;
+}
+header.site h1 { margin: 0 0 .3rem; font-size: 1.9rem; font-weight: bold; }
+header.site p { margin: 0; color: var(--muted); font-style: italic; }
+nav { text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line);
+  background: var(--card); font-size: .92rem; }
+nav a { margin: .25rem .55rem; display: inline-block; color: var(--accent);
+  text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2.1rem; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+h3 { margin-top: 1.6rem; }
+a { color: var(--accent); }
+pre {
+  background: #2d2d3a; color: #e8e8f2; padding: 1rem 1.1rem;
+  border-radius: 10px; overflow-x: auto; font-size: .86rem;
+  font-family: "Courier New", monospace; line-height: 1.5;
+}
+code { font-family: "Courier New", monospace; font-size: .9em;
+  background: var(--accent-soft); padding: .1em .4em; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1.2rem 0; padding: .8rem 1.2rem; border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 0 10px 10px 0; font-style: italic;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0;
+  font-size: .95rem; background: var(--card); }
+th, td { text-align: left; padding: .55rem .8rem; border: 1px solid var(--line); }
+th { background: var(--accent-soft); }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+  padding: 1.5rem 1rem 2.5rem; border-top: 1px solid var(--line); }
+.nextprev { display: flex; justify-content: space-between; gap: 1rem;
+  margin: 2.6rem 0 0; }
+.nextprev a { text-decoration: none; background: var(--accent-soft);
+  padding: .6rem 1rem; border-radius: 10px; }
+.nextprev a:hover { text-decoration: underline; }
+@media (max-width: 600px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<header class="site"><h1>Study Smarter with AI</h1><p>Turn AI into a study partner — learn, don't copy.</p></header>
+<nav>
+<a href="00-how-to-use-this-guide.html">How to Use This Guide</a>
+<a href="01-notes-into-quizzes.html">1. Notes Into Quizzes</a>
+<a href="02-explain-it-back.html">2. Explain It Back</a>
+<a href="03-spaced-review.html">3. Spaced Review</a>
+<a href="04-catching-hallucinations.html">4. Catching Hallucinations</a>
+<a href="05-citation-honesty.html">5. Citation Honesty</a>
+<a href="06-free-tools.html" class="current">6. Free Tools</a>
+<a href="07-worked-example.html">7. Worked Example</a>
+<a href="glossary.html">Glossary</a>
+</nav>
+<main>
+<h1>Chapter 6 — Free Stuff That Actually Works</h1>
+<p><em>Study Smarter with AI</em></p>
+<p>You can run this whole guide's playbook for <strong>$0</strong>. Here's the honest map of the free landscape, and where each piece fits.</p>
+<h2>Free AI chats (your study partner)</h2>
+<p>Most major AI services have solid free tiers, usable in any browser without installing anything. This guide stays product-agnostic — services change pricing and names all the time. What to evaluate:</p>
+<ul>
+<li><strong>Daily limits:</strong> free tiers limit how many messages you get per day (or per few hours). Enough for the techniques in this guide; you'll notice limits only with heavy daily use.
+</li>
+<li><strong>File uploads:</strong> can you attach a photo of your handwritten notes, or a PDF? Methods matter less than the technique; a quiz-master prompt works with either.
+</li>
+<li><strong>Accounts:</strong> any free account on any major service works for Chapters 1–5.
+</li></ul>
+<p id="the-key-insight-the-technique-matters-far-more-than-the-tool"><strong>The key insight: the technique matters far more than the tool.</strong> A great prompt in a modest free chat beats a lazy prompt in the fanciest model. Prompt quality is the free upgrade.</p>
+<h2>Free flashcards and spaced repetition (your memory system)</h2>
+<p>Chapter 3's schedule can be run in a paper calendar — but if you want automation, these are the free workhorses (all run in a browser, most with phone apps):</p>
+<ul>
+<li><strong>Anki</strong> (apps.ankiweb.net) — the veteran spaced-repetition app. Free on desktop, web, and Android; the iOS app is paid (the web version works on iPhone for free). It schedules reviews <em>for</em> you using the science from Chapter 3. Steeper learning curve, unmatched depth.
+</li>
+<li><strong>Quizlet</strong> (quizlet.com) — friendliest starting point, familiar interface, strong free features with some content behind a subscription.
+</li>
+<li><strong>Cold Turkey-style note apps</strong> — any notes app with checkboxes works for the journal approach in Chapter 3.
+</li></ul>
+<p id="a-workflow-that-ties-it-together"><strong>A workflow that ties it together:</strong> have AI generate flashcards from your notes in <code>FRONT/BACK</code> text format (Chapter 1), paste them into your flashcard app, and let the app schedule reviews while the AI handles explain-it-back sessions.</p>
+<h2>Free tools for making and sharing what you learn</h2>
+<ul>
+<li><strong>GitHub</strong> (github.com) — free hosting for notes, flashcard text files, and anything you build. Your study materials, versioned and backed up. The hub site for this guide's author lives there too — see dylanasdale.github.io.
+</li>
+<li><strong>Static site tools</strong> — if you write notes in Markdown, free tools (many listed in this repo's build script — check <code>build.py</code>) can turn them into a shareable website like... well, like this guide.
+</li>
+<li><strong>Library databases</strong> — your real superpower. Your school or public library gives you licensed, <em>verified</em> sources: the exact thing to check AI answers against (Chapters 4 and 5). Librarians will happily show you — it's their favorite conversation.
+</li></ul>
+<h2>What "free" costs, honestly</h2>
+<p>Free tiers have limits; ads exist; some features are paid. Two rules of thumb:</p>
+<ol>
+<li><strong>Never pay to access basic studying.</strong> Everything in this guide — quizzes, explain-back, spaced review — works fine on free tiers.
+</li>
+<li><strong>If a tool asks for your data, read what it wants.</strong> Prefer tools that let you study without selling your study habits. When in doubt, the plain-browser free tiers of the major AI services are the least surprising.
+</li></ol>
+<h2>The anti-list: things you don't need</h2>
+<ul>
+<li>A paid "AI tutor" service with a fancy landing page — the free chats do this.
+</li>
+<li>Premium note-taking apps <em>before</em> you have a note habit. Blank paid apps hold zero notes.
+</li>
+<li>Any tool claiming to "learn for you." That's Chapter 5's escalator in product form.
+</li></ul>
+<h2>Try it today</h2>
+<p>Create one free account — a flashcard app <em>or</em> an AI chat, whichever you don't have. Do one thing in it from this guide. One account, one technique, ten minutes. That's a complete start.</p>
+<div class="nextprev"><a href="05-citation-honesty.html">← 5. Citation Honesty</a><a href="07-worked-example.html">7. Worked Example →</a></div>
+</main>
+<footer>
+Built from the docs/ markdown source by <code>build.py</code> ·
+Study Smarter with AI · © 2026 Asdale Dynamics, LLC · MIT licensed
+</footer>
+</body>
+</html>

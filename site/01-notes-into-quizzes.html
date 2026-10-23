@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn AI into a study partner — learn, don&#x27;t copy.">
+<title>Chapter 1 — Turning Your Notes Into Quizzes — Study Smarter with AI</title>
+<style>:root {
+  --ink: #2a2a35; --muted: #6b6b78; --paper: #fdfbf7; --card: #ffffff;
+  --accent: #7c5cff; --accent-soft: #efeaff; --line: #e8e4dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7; font-size: 18px;
+}
+header.site {
+  background: var(--accent-soft); border-bottom: 3px solid var(--accent);
+  padding: 2.2rem 1rem 1.4rem; text-align: center;
+}
+header.site h1 { margin: 0 0 .3rem; font-size: 1.9rem; font-weight: bold; }
+header.site p { margin: 0; color: var(--muted); font-style: italic; }
+nav { text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line);
+  background: var(--card); font-size: .92rem; }
+nav a { margin: .25rem .55rem; display: inline-block; color: var(--accent);
+  text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2.1rem; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+h3 { margin-top: 1.6rem; }
+a { color: var(--accent); }
+pre {
+  background: #2d2d3a; color: #e8e8f2; padding: 1rem 1.1rem;
+  border-radius: 10px; overflow-x: auto; font-size: .86rem;
+  font-family: "Courier New", monospace; line-height: 1.5;
+}
+code { font-family: "Courier New", monospace; font-size: .9em;
+  background: var(--accent-soft); padding: .1em .4em; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1.2rem 0; padding: .8rem 1.2rem; border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 0 10px 10px 0; font-style: italic;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0;
+  font-size: .95rem; background: var(--card); }
+th, td { text-align: left; padding: .55rem .8rem; border: 1px solid var(--line); }
+th { background: var(--accent-soft); }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+  padding: 1.5rem 1rem 2.5rem; border-top: 1px solid var(--line); }
+.nextprev { display: flex; justify-content: space-between; gap: 1rem;
+  margin: 2.6rem 0 0; }
+.nextprev a { text-decoration: none; background: var(--accent-soft);
+  padding: .6rem 1rem; border-radius: 10px; }
+.nextprev a:hover { text-decoration: underline; }
+@media (max-width: 600px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<header class="site"><h1>Study Smarter with AI</h1><p>Turn AI into a study partner — learn, don't copy.</p></header>
+<nav>
+<a href="00-how-to-use-this-guide.html">How to Use This Guide</a>
+<a href="01-notes-into-quizzes.html" class="current">1. Notes Into Quizzes</a>
+<a href="02-explain-it-back.html">2. Explain It Back</a>
+<a href="03-spaced-review.html">3. Spaced Review</a>
+<a href="04-catching-hallucinations.html">4. Catching Hallucinations</a>
+<a href="05-citation-honesty.html">5. Citation Honesty</a>
+<a href="06-free-tools.html">6. Free Tools</a>
+<a href="07-worked-example.html">7. Worked Example</a>
+<a href="glossary.html">Glossary</a>
+</nav>
+<main>
+<h1>Chapter 1 — Turning Your Notes Into Quizzes</h1>
+<p><em>Study Smarter with AI</em></p>
+<h2>Why quizzing works</h2>
+<p>Here's a finding that surprises a lot of people: <strong>re-reading your notes feels productive but isn't.</strong> Reading something again just makes it <em>familiar</em>, and familiarity is not the same as knowing. What actually builds memory is <strong>retrieval practice</strong> — the act of pulling an answer out of your head. Every time you dig up a fact from memory, your brain marks it as "worth keeping."</p>
+<p>Quizzing is retrieval practice with a lid on it. And AI is honestly great at writing the quizzes, because writing good questions is tedious — but AI doesn't get tired, and it can generate 20 practice questions from your notes in the time it takes you to sharpen a pencil.</p>
+<h2>The basic recipe</h2>
+<p>Take a chunk of your notes — roughly one lecture's worth, not the whole semester — and paste it into a chat with an AI. Then use a prompt like this one:</p>
+<pre><code>Here are my class notes. Act like a friendly quiz master.
+
+1. Ask me ONE question at a time and wait for my answer.
+2. After I answer, tell me if I was right, then briefly
+   explain the correct answer.
+3. Ask follow-up &quot;why&quot; questions when it would help.
+4. After 10 questions, give me a score and tell me which
+   topics I was weakest on.
+5. Any false starts I make, be encouraging — I&#x27;m learning.
+
+Notes: [paste your notes here]</code></pre>
+<p>That's the whole trick. One question at a time matters; if the AI dumps 20 questions at once, you'll skim them — and skimming is the re-reading trap again.</p>
+<h2>Dialing the difficulty</h2>
+<p>A few follow-up phrases that make the quiz fit you better:</p>
+<ul>
+<li><strong>"Ask me mostly why questions, not definitions."</strong> Definitions test memory; <em>why</em> questions test understanding. You want a mix, weighted toward why.
+</li>
+<li><strong>"Ask me the questions I'm most likely to see on an exam."</strong> If you have a study guide or practice exam, paste that too — "make my quiz in the same style as these questions."
+</li>
+<li><strong>"I got that wrong — ask me a similar one in a minute."</strong> This is the AI version of the spaced-review idea from Chapter 3, done in miniature.
+</li>
+<li><strong>"Play a character."</strong> For example: "Pretend you're a patient and I'm the nurse — I have to explain my medications to you in normal words." This works absurdly well and is a lot less boring than a plain quiz.
+</li></ul>
+<h2>Turn your flashcards into AI flashcards</h2>
+<p>If your notes live in flashcard apps or a spreadsheet, even better. Try:</p>
+<pre><code>Here are my flashcard fronts and backs. Quiz me on these,
+one at a time, shuffled. When I get one wrong, end by asking
+me to restate the answer in my own words.</code></pre>
+<p>And if you <em>don't</em> have flashcards yet, ask the AI:</p>
+<pre><code>From these notes, make me 15 flashcards. Format each one as
+FRONT: question / BACK: answer. Keep backs under 25 words.</code></pre>
+<p>(Then check them against your notes — see Chapter 4 on hallucinations. Occasionally AI "remembers" a detail your instructor never said.)</p>
+<h2>A gentle warning</h2>
+<p>AI-generated quizzes are a study aid, not a source of truth about what will be on your exam. Your instructor's vibe, the textbook's emphasis, the specific wording of past exams — AI doesn't know those things unless you tell it. Treat AI quizzes as <em>warm-ups</em>, and your instructor's materials as the real game film.</p>
+<h2>Try it today</h2>
+<p>Open your messiest set of notes. Paste them into any AI chat with the quiz-master prompt above. Answer ten questions. Congratulations — that's real studying, with a robot holding a clipboard. Be kind to yourself about the score; the score is information, not judgment.</p>
+<div class="nextprev"><a href="00-how-to-use-this-guide.html">← How to Use This Guide</a><a href="02-explain-it-back.html">2. Explain It Back →</a></div>
+</main>
+<footer>
+Built from the docs/ markdown source by <code>build.py</code> ·
+Study Smarter with AI · © 2026 Asdale Dynamics, LLC · MIT licensed
+</footer>
+</body>
+</html>

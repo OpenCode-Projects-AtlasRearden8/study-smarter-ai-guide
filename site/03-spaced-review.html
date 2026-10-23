@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn AI into a study partner — learn, don&#x27;t copy.">
+<title>Chapter 3 — Spaced Review (So Things Actually Stick) — Study Smarter with AI</title>
+<style>:root {
+  --ink: #2a2a35; --muted: #6b6b78; --paper: #fdfbf7; --card: #ffffff;
+  --accent: #7c5cff; --accent-soft: #efeaff; --line: #e8e4dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7; font-size: 18px;
+}
+header.site {
+  background: var(--accent-soft); border-bottom: 3px solid var(--accent);
+  padding: 2.2rem 1rem 1.4rem; text-align: center;
+}
+header.site h1 { margin: 0 0 .3rem; font-size: 1.9rem; font-weight: bold; }
+header.site p { margin: 0; color: var(--muted); font-style: italic; }
+nav { text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line);
+  background: var(--card); font-size: .92rem; }
+nav a { margin: .25rem .55rem; display: inline-block; color: var(--accent);
+  text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2.1rem; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+h3 { margin-top: 1.6rem; }
+a { color: var(--accent); }
+pre {
+  background: #2d2d3a; color: #e8e8f2; padding: 1rem 1.1rem;
+  border-radius: 10px; overflow-x: auto; font-size: .86rem;
+  font-family: "Courier New", monospace; line-height: 1.5;
+}
+code { font-family: "Courier New", monospace; font-size: .9em;
+  background: var(--accent-soft); padding: .1em .4em; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1.2rem 0; padding: .8rem 1.2rem; border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 0 10px 10px 0; font-style: italic;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0;
+  font-size: .95rem; background: var(--card); }
+th, td { text-align: left; padding: .55rem .8rem; border: 1px solid var(--line); }
+th { background: var(--accent-soft); }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+  padding: 1.5rem 1rem 2.5rem; border-top: 1px solid var(--line); }
+.nextprev { display: flex; justify-content: space-between; gap: 1rem;
+  margin: 2.6rem 0 0; }
+.nextprev a { text-decoration: none; background: var(--accent-soft);
+  padding: .6rem 1rem; border-radius: 10px; }
+.nextprev a:hover { text-decoration: underline; }
+@media (max-width: 600px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<header class="site"><h1>Study Smarter with AI</h1><p>Turn AI into a study partner — learn, don't copy.</p></header>
+<nav>
+<a href="00-how-to-use-this-guide.html">How to Use This Guide</a>
+<a href="01-notes-into-quizzes.html">1. Notes Into Quizzes</a>
+<a href="02-explain-it-back.html">2. Explain It Back</a>
+<a href="03-spaced-review.html" class="current">3. Spaced Review</a>
+<a href="04-catching-hallucinations.html">4. Catching Hallucinations</a>
+<a href="05-citation-honesty.html">5. Citation Honesty</a>
+<a href="06-free-tools.html">6. Free Tools</a>
+<a href="07-worked-example.html">7. Worked Example</a>
+<a href="glossary.html">Glossary</a>
+</nav>
+<main>
+<h1>Chapter 3 — Spaced Review (So Things Actually Stick)</h1>
+<p><em>Study Smarter with AI</em></p>
+<h2>The problem: forgetting is normal</h2>
+<p>You studied hard. Two weeks later it's gone. That's not a character flaw — that's the <strong>forgetting curve</strong>, and it's completely normal. What's <em>not</em> normal is fighting it with brute force, cramming the night before, and re-learning the same material from scratch every semester.</p>
+<p>The fix is wonderfully lazy: <strong>review each topic right when you're about to forget it.</strong> Reviewing material you're about to forget is worth many times more than re-reading material you already know cold. This is called <strong>spaced repetition</strong>, and it's the closest thing education has to a cheat code.</p>
+<h2>The simplest schedule that works (no apps needed)</h2>
+<p>For each batch of notes, review:</p>
+<ul>
+<li><strong>Day 0</strong> — learn it
+</li>
+<li><strong>Day 2</strong> — first quick quiz (5 minutes)
+</li>
+<li><strong>Day 7</strong> — second quiz (10 minutes)
+</li>
+<li><strong>Day 21</strong> — third quiz (10 minutes)
+</li>
+<li><strong>Before the exam</strong> — one final pass, focusing on what you got wrong
+</li></ul>
+<p>That's it. Four touchpoints and the material moves from "I saw it" to "I own it." The AI's role: <strong>make day 2, 7, and 21 trivially easy to run.</strong></p>
+<h2>Ask AI to be your review scheduler</h2>
+<pre><code>Here are my notes about [topic]. Design me a 3-week spaced
+review plan. Each review should take 10 minutes or less and
+be a short quiz plus one explain-it-back question. Give me
+a checklist format I can copy into my phone.</code></pre>
+<p>The magic is that <strong>day 7 and day 21 quizzes can be different from day 2's</strong>. On day 21, the gaps you fell into on day 2 and 7 are exactly what the AI should hammer:</p>
+<pre><code>Here&#x27;s my review plan and the topics I got wrong last time
+([list them]). Quiz me mostly on those, plus a few new
+questions from my notes.</code></pre>
+<p>Now the schedule adapts to <em>your</em> brain instead of a generic one. That's the whole advantage of doing this with AI versus a printed checklist.</p>
+<h2>Where to keep it</h2>
+<p>Honest advice: the tool you'll actually use beats the fancy one. In ascending order of commitment:</p>
+<ol>
+<li><strong>Calendar events.</strong> "Quiz — biology notes, 10 min." Works for everyone. Truly works.
+</li>
+<li><strong>A running learning journal.</strong> One markdown file or note app document. Each entry: date, topic, what you got wrong. Ask AI to read the journal and tell you what to quiz yourself on next.
+</li>
+<li><strong>Dedicated flashcard apps</strong> (many free — see Chapter 6) that automate the scheduling. Great once you have a steady flow of material.
+</li></ol>
+<p>Start at level 1. Move up only when it feels natural, not because a tool would be "nice."</p>
+<h2>Fitting reviews into real life</h2>
+<ul>
+<li><strong>Attach reviews to existing habits.</strong> Quiz while coffee brews. On the bus. Walking to class. Small and done beats perfect and scheduled.
+</li>
+<li><strong>If you miss a review, do it late.</strong> Late spaced review still works; the curve hasn't collapsed, it's just steeper.
+</li>
+<li><strong>Keep reviews SHORT.</strong> Never longer than 10–15 minutes each. Spaced repetition earns its keep through repetition, not through marathon sessions.
+</li></ul>
+<h2>Try it today</h2>
+<p>Pick your last two weeks of study material. Set three calendar events: one in two days, one in a week, one in three weeks, each titled "Review: [topic] + AI quiz." That took you four minutes and just made your future self measurably smarter.</p>
+<div class="nextprev"><a href="02-explain-it-back.html">← 2. Explain It Back</a><a href="04-catching-hallucinations.html">4. Catching Hallucinations →</a></div>
+</main>
+<footer>
+Built from the docs/ markdown source by <code>build.py</code> ·
+Study Smarter with AI · © 2026 Asdale Dynamics, LLC · MIT licensed
+</footer>
+</body>
+</html>

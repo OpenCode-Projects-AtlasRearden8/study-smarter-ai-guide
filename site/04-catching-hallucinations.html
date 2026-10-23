@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Turn AI into a study partner — learn, don&#x27;t copy.">
+<title>Chapter 4 — Catching Hallucinations — Study Smarter with AI</title>
+<style>:root {
+  --ink: #2a2a35; --muted: #6b6b78; --paper: #fdfbf7; --card: #ffffff;
+  --accent: #7c5cff; --accent-soft: #efeaff; --line: #e8e4dc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--paper); color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7; font-size: 18px;
+}
+header.site {
+  background: var(--accent-soft); border-bottom: 3px solid var(--accent);
+  padding: 2.2rem 1rem 1.4rem; text-align: center;
+}
+header.site h1 { margin: 0 0 .3rem; font-size: 1.9rem; font-weight: bold; }
+header.site p { margin: 0; color: var(--muted); font-style: italic; }
+nav { text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line);
+  background: var(--card); font-size: .92rem; }
+nav a { margin: .25rem .55rem; display: inline-block; color: var(--accent);
+  text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin-top: 2.1rem; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+h3 { margin-top: 1.6rem; }
+a { color: var(--accent); }
+pre {
+  background: #2d2d3a; color: #e8e8f2; padding: 1rem 1.1rem;
+  border-radius: 10px; overflow-x: auto; font-size: .86rem;
+  font-family: "Courier New", monospace; line-height: 1.5;
+}
+code { font-family: "Courier New", monospace; font-size: .9em;
+  background: var(--accent-soft); padding: .1em .4em; border-radius: 4px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1.2rem 0; padding: .8rem 1.2rem; border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 0 10px 10px 0; font-style: italic;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0;
+  font-size: .95rem; background: var(--card); }
+th, td { text-align: left; padding: .55rem .8rem; border: 1px solid var(--line); }
+th { background: var(--accent-soft); }
+footer { text-align: center; color: var(--muted); font-size: .85rem;
+  padding: 1.5rem 1rem 2.5rem; border-top: 1px solid var(--line); }
+.nextprev { display: flex; justify-content: space-between; gap: 1rem;
+  margin: 2.6rem 0 0; }
+.nextprev a { text-decoration: none; background: var(--accent-soft);
+  padding: .6rem 1rem; border-radius: 10px; }
+.nextprev a:hover { text-decoration: underline; }
+@media (max-width: 600px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<header class="site"><h1>Study Smarter with AI</h1><p>Turn AI into a study partner — learn, don't copy.</p></header>
+<nav>
+<a href="00-how-to-use-this-guide.html">How to Use This Guide</a>
+<a href="01-notes-into-quizzes.html">1. Notes Into Quizzes</a>
+<a href="02-explain-it-back.html">2. Explain It Back</a>
+<a href="03-spaced-review.html">3. Spaced Review</a>
+<a href="04-catching-hallucinations.html" class="current">4. Catching Hallucinations</a>
+<a href="05-citation-honesty.html">5. Citation Honesty</a>
+<a href="06-free-tools.html">6. Free Tools</a>
+<a href="07-worked-example.html">7. Worked Example</a>
+<a href="glossary.html">Glossary</a>
+</nav>
+<main>
+<h1>Chapter 4 — Catching Hallucinations</h1>
+<p><em>Study Smarter with AI</em></p>
+<h2>What a hallucination is</h2>
+<p>AI sometimes states things that are <strong>flat-out wrong but said with total confidence</strong>. Made-up statistics. A quote that was never said. A book chapter that doesn't exist. A drug interaction that isn't real. This is called a <strong>hallucination</strong>, and it is the single most important thing in this guide to understand.</p>
+<p>It's not a bug patch you can wait out. It happens with every AI. And it doesn't <em>look</em> like lying — it looks exactly like a knowledgeable friend.</p>
+<h2>Why it happens (the short, honest version)</h2>
+<p>AI models predict what words <em>should come next</em> based on patterns in tons of text. They have no fact-checker inside. When the pattern points at a plausible-sounding sentence, the sentence comes out — whether the underlying fact was true, fuzzy, or invented. <em>Confident, fluent, and wrong</em> all at once is genuinely a thing, and now you know its name.</p>
+<h2>The habits that catch most hallucinations</h2>
+<p id="1-ask-for-sources-then-verify-them-yourself"><strong>1. Ask for sources — then verify them yourself.</strong> If an AI cites a study, a book, or a webpage, assume the citation could be invented until you've seen it with your own eyes. Search for the title or DOI yourself. If it doesn't exist, you just dodged a footnoted falsehood — this happens more often than you'd think.</p>
+<p id="2-cross-check-anything-that-matters"><strong>2. Cross-check anything that matters.</strong> Any fact you'd put in a paper, tell a patient, or rely on for money or safety: check it against a second source you trust (your textbook, a licensed database, an official site). Rule of thumb — <strong>AI is rough-draft trustworthy, trail documents are deposit-box trustworthy.</strong></p>
+<p id="3-be-suspicious-of-suspiciously-good-answers"><strong>3. Be suspicious of suspiciously good answers.</strong> Round numbers. Perfect quotes. Statistics attached to emotions. "Studies show…" with no study you can find. These are the classic shapes of hallucinated content. If an answer feels like it was tailor-made for your exact question, check harder — the universe is usually messier.</p>
+<p id="4-ask-the-ai-to-stress-test-itself"><strong>4. Ask the AI to stress-test itself.</strong> Surprisingly effective follow-ups:</p>
+<pre><code>Are there any parts of that answer you might have gotten
+wrong or made up? Which claims are you least sure about?</code></pre>
+<pre><code>What would a skeptical expert push back on?</code></pre>
+<p>This won't catch everything — but models often <em>know</em> (in the "lower confidence" sense) when they're on thin ice, and asking makes them say so.</p>
+<p id="5-ask-the-ai-for-how-to-verify-not-just-the-answer"><strong>5. Ask the AI for how to verify, not just the answer.</strong></p>
+<pre><code>I need verify-level accuracy on this. After your answer,
+tell me exactly where I should double-check it — specific
+textbook chapters, reputable sites, or the type of source.</code></pre>
+<h2>When hallucinations matter most</h2>
+<table><thead><tr><th>Situation</th><th>Care level</th></tr></thead><tbody><tr><td>Quizzing yourself from your own notes</td><td>Low — you have the source right there</td></tr><tr><td>Understanding a concept</td><td>Low-medium — you'll fix small errors studying</td></tr><tr><td>Quotes, statistics, citations in work you hand in</td><td>High — verify every one</td></tr><tr><td>Health, medications, legal, money, safety</td><td>Maximum — verify with professionals and official sources</td></tr></tbody></table>
+<p>That last row deserves plain words: <strong>AI is not a doctor, pharmacist, lawyer, or accountant.</strong> Learners in health fields should treat AI like a study partner, never as clinical authority. Learners in health fields should treat AI like a study partner, never as clinical authority — the same honesty rules from <a href="05-citation-honesty.html">Chapter 5</a> apply to life, not just school.</p>
+<h2>A healthy relationship, in one line</h2>
+<blockquote><p>Trust the AI for thinking out loud with you. Trust yourself — checking real sources — for anything you repeat to anyone else as fact.</p></blockquote>
+<p>Hallucinations aren't a reason to avoid AI. They're the reason to use AI the <em>way this guide teaches</em>: you provide the material and the judgment; AI provides the questions, the practice, and the push. In that arrangement, its weak spot is guarded by your strong one.</p>
+<h2>Try it today</h2>
+<p>Ask an AI something it might get wrong — for example, "quote the exact opening paragraph of [a book you know]" — and then check the quote in the actual book or a reliable source. Notice the confidence. Notice the possibly broken quote. That little experiment builds the immunity you'll use all year.</p>
+<div class="nextprev"><a href="03-spaced-review.html">← 3. Spaced Review</a><a href="05-citation-honesty.html">5. Citation Honesty →</a></div>
+</main>
+<footer>
+Built from the docs/ markdown source by <code>build.py</code> ·
+Study Smarter with AI · © 2026 Asdale Dynamics, LLC · MIT licensed
+</footer>
+</body>
+</html>
