@@ -1,6 +1,11 @@
 # nothing interesting to ignore, but keep local clutter out of the repo
-__pycache__/
 *.pyc
-.DS_Store
-THUMBS.ini
 *.swp
+.DS_Store
+.env
+.env.*
+.venv/
+THUMBS.ini
+__pycache__/
+dist/*.tmp
+node_modules/
